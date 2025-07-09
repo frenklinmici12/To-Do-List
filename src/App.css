@@ -1,0 +1,125 @@
+
+.container {
+  background-color: rgb(100,100,100);
+  border-radius: 30px;
+
+  height: 700px;
+  width: 900px;
+
+  font-family: Arial, Helvetica, sans-serif;
+  border: 2px solid white;
+}
+
+.header {
+  color: white;
+  
+  font-size: 50px;
+
+
+  text-align: center;
+
+  margin: 0;
+  margin-bottom: 30px;
+
+  background-color: rgb(75,75,75);
+
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+
+}
+
+.userInput {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+
+  height: 50px;
+
+  margin-bottom: 30px;
+}
+
+.userInput input {
+  border: 0;
+  margin-right: 5px;
+  border-radius: 30px;
+
+  width: 75%;
+}
+
+.userInput button {
+  border: 0;
+  border-radius: 30px;
+  
+  width: 7%;
+  margin-right: 1%;
+}
+
+.userInput input:hover {
+  transform: scale(1.01); /* optional zoom effect */
+  transition: all 0.2s ease; /* smooth animation */
+}
+
+.userInput button:hover {
+  background-color: white;
+  transform: scale(1.04); /* optional zoom effect */
+  transition: all 0.2s ease; /* smooth animation */
+}
+
+.userInput button:active {
+  transform: scale(0.95); /* Shrinks button slightly on press */
+  background-color: rgb(75,75,75); /* Darker color on press */
+}
+
+.count {
+  color: white;
+  text-align: center;
+}
+
+/*list items*/
+
+.list {
+  margin-left: 50px;
+  margin-right: 50px;
+  font-size: 25px;
+  
+/*height for this container is {height}. when it exceeds that height (too many tasks), it maeks a scrollbar*/
+  height: 450px;
+  overflow-y: auto;
+}
+
+/*how do i make it so each task is as long as its text????*/
+.list li {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%; /* or set a specific width like 300px */
+
+  background-color: rgb(150,150,150);
+  border-radius: 20px;
+  
+  max-width: fit-content;
+  padding: 10px;
+  border: 1px solid black;
+
+  margin-bottom: 10px;
+}
+
+.list button, input {
+  padding: 10px;
+  margin-left: 10px;
+
+  border: 1px solid black;
+  border-radius: 30px;
+}
+
+
+.list button:hover {
+  background-color: white;
+  transform: scale(1.05); /* optional zoom effect */
+  transition: all 0.2s ease; /* smooth animation */
+}
+
+.listbutton:active {
+  transform: scale(0.95); /* Shrinks button slightly on press */
+  background-color: rgb(75,75,75); /* Darker color on press */
+}

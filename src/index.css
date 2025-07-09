@@ -1,0 +1,14 @@
+body {
+  background-color: rgb(25,25,25);
+  margin: 0;
+
+  min-width: 320px;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center; /* horizontal */
+  align-items: center;     /* vertical */
+  
+  /* anything in this will be centered in the context of this (so the container) */
+
+}
